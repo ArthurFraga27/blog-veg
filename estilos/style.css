@@ -1,32 +1,53 @@
 @charset "UTF-8";
+@keyframes moveToRight {
+    0% {
+      transform: translateX(-10px);
+      color: transparent;
+    }
+    100% {
+      transform: translateX(0px);
+    }
+  }
+
+:root{
+    --cor1:rgba(112, 249, 49, 0.226);
+}
+
 *{
     padding: 0px;
     margin: 0px;
 }
 
 body{
-    background-color: rgba(69, 204, 7, 0.357);
+    background-image: linear-gradient(to bottom, var(--cor1),rgba(255, 255, 255, 0.616), white,white, rgba(255, 255, 0, 0.316));
     font-family: sans-serif;
 }
-
+body > h1{
+    text-align: center;
+}
 header{
-    max-width: 990px;
+    max-width: 95%;
     min-width: 400px;
     height: 80px;
     margin: 30px auto auto auto;
-    border: 1px solid black;
+    border: 1px solid rgba(0, 0, 0, 0.137);
     border-radius: 40px;
     text-align: center;
     background-color: white;
     position: relative;
+    box-shadow: 3px 2px 8px rgba(0, 0, 0, 0.173);
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.108);
 }
 header p{
     font-weight: bolder;
     font-size: 20px;
     position: absolute;
-    top: 35%;
+    top: 22%;
     left: 30px;
+    font-weight: bold;
+    font-style: italic;
 }
+
 header nav{
     position: absolute;
     top: 35%;
@@ -38,6 +59,7 @@ header nav a{
     font-size: 18px;
     padding: 10px;
     font-weight: bold;
+    border-radius: 20px;
 }
 header a:hover{
     color: white;
@@ -47,6 +69,67 @@ header a:hover{
     transition: 0.7s;
 }
 
+section#frase{
+    min-height: 600px;
+    position: relative;
+    text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.229); 
+    font-family: Arial, Helvetica, sans-serif;
+}
+section#frase h1{
+    position: absolute;
+    top: 30%;
+    left: 7%;
+    line-height: 50px;
+    font-weight: bolder;
+    font-size: 46px;
+    animation: moveToRight 0.6s ease-in-out;
+    animation-delay: 1000ms;
+}
+
+section#proposta{
+    max-width: 900px;
+    
+    margin: auto;
+    padding: 15px;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+.solto{
+    padding: 30px;
+}
+main{
+    max-width: 900px;
+    margin: auto;
+    padding: 15px;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.sobre{
+    max-width: 900px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 15px;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
+section#social{
+    max-width: 900px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 15px;
+    border: 2.5px solid black;
+    border-radius: 10px;
+    text-align: center;
+}
 footer{
-    color: rgb(184, 180, 180);
+    text-align: right;
+}
+footer p{
+    color: rgba(42, 42, 42, 0.666);
+    font-style: italic;
+    padding: 10px;
 }
