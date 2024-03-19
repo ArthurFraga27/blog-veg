@@ -146,35 +146,32 @@ main{
     
 }
 .sobre > img{
-    height: 30vh;
-    width: 30vh;
+    max-height: 190px;
+    max-width: 100px;
     display: inline-block;
     border: 1px solid rgba(0, 0, 0, 0.206);
-    border-radius: 80px;
+    border-radius: 200px;
     position: absolute;
-    top: 15%;
-    left: 5%;
+    top: 10%;
+    left: 3%;
 }
 .sobre > h3{
     position: absolute;
-    top: 5px;
-    left: 230px;
+    top: 5%;
+    left: 30%;
 }
 .sobre > p{
     position: absolute;
-    top: 30px;
-    left: 230px;
+    top: 20%;
+    left: 30%;
 }
 div.social{
     position: absolute;
-    top: 190px;
-    right: 10px;
+    bottom: 2%;
+    right: 2%;
     border-radius: 10px;
-    text-align: left;
 }
 div.social > a{
-    text-decoration: none;
-    color: black;
     padding: 5px;
     display: inline-block;
 }
